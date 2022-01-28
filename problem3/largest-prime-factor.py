@@ -131,11 +131,13 @@ print sumOfAll
 
 number = testNumber 
 divisor = 1 
+loopCounter = 0
 while number > 1:
-    divisor += 1
-    while number%divisor == 0:          
-        #print("factor = ", divisor)
-        number = number//divisor
+	logging.debug('%s %s', number, divisor)
+	divisor += 1
+    	while number%divisor == 0:          
+        	logging.debug("factor = %s", divisor)
+        	number = number//divisor
 print("largest factor = ", divisor)
 
 
