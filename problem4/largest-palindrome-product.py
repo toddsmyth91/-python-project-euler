@@ -69,12 +69,15 @@ while ceilingNumber > 0:
 	ceilingNumber -= 1
 
 # ------------------- BEST ONLINE SOLUTION
-polindrom = 1
-for first in range(100, 1000):
-    for second in range(first, 1000):
-        product = first * second
-        prList = list(str(product))
-        if prList[0] == prList[-1] and prList[1] == prList[-2] and prList[2] == prList[-3]:
-            if polindrom < product:
-                polindrom = product
-print(polindrom)
+# this solution uses a lot less storage
+# - which is what python is horrible at being an extreme memory hog
+c=0
+for i in range(999,99,-1):
+
+    for j in range(999,99,-1):
+        a = i*j
+        b= int(str(a)[::-1])
+        if a==b and a>c:
+            c = a
+
+print(c)
