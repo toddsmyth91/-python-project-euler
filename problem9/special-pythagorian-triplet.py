@@ -31,6 +31,7 @@ Find the product abc.
 
 # -------------------- MY SOLUTION
 '''
+	Amazing online resource: https://r-knott.surrey.ac.uk/Pythag/pythag.html
 	I want to put in an explanation for this one - using the Fibonnaci style method for calculating triplets
 	Firstly we are provided the perimeter of our triangle which will have a pythag triplet
 
